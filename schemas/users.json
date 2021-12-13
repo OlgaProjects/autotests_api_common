@@ -21,7 +21,7 @@
                   "type": "string"
                 },
                 "login": {
-                  "type": "null"
+                  "type": "string"
                 },
                 "phone_number": {
                   "type": "string"
@@ -159,7 +159,7 @@
                           "type": "null"
                         },
                         "fias_id": {
-                          "type": "string"
+                          "type": "null"
                         },
                         "orpon_id": {
                           "type": "integer"

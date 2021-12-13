@@ -3,7 +3,7 @@ import pathlib
 
 
 class Config:
-    url = ""
+    url = ''
     api_method_users = "/api/v3/users?limit=1"
     api_method_devices = '/api/v4/devices?limit='
     exp_status = "Российская Федерация"
