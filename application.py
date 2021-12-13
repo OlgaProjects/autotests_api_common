@@ -1,7 +1,7 @@
 import pytest
 from clients.api_helpers import ApiHousehold
 from checkers.checkers_helper import Checkers
-from helpers.regions_helper import RegHelp
+from helpers.helper import RegHelp
 
 
 class Application:

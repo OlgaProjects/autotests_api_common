@@ -1,0 +1,160 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "request_id": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "items": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "company_id": {
+                  "type": "integer"
+                },
+                "access_company_ids": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "integer"
+                    }
+                  ]
+                },
+                "access_building_ids": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "integer"
+                    }
+                  ]
+                },
+                "flatgramm_ids": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "integer"
+                    }
+                  ]
+                },
+                "device_type": {
+                  "type": "string"
+                },
+                "model_type": {
+                  "type": "string"
+                },
+                "serial_number": {
+                  "type": "string"
+                },
+                "mac": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "host": {
+                  "type": "string"
+                },
+                "status_type": {
+                  "type": "string"
+                },
+                "status_checked_at": {
+                  "type": "string"
+                },
+                "sw_version": {
+                  "type": "string"
+                },
+                "hw_version": {
+                  "type": "string"
+                },
+                "kkm": {
+                  "type": "null"
+                },
+                "settings": {
+                  "type": "object",
+                  "properties": {
+                    "door": {
+                      "type": "object"
+                    },
+                    "ntp": {
+                      "type": "object"
+                    },
+                    "rfid": {
+                      "type": "object"
+                    },
+                    "syslog": {
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "door",
+                    "ntp",
+                    "rfid",
+                    "syslog"
+                  ]
+                },
+                "sync_status_type": {
+                  "type": "string"
+                },
+                "sync_at": {
+                  "type": "string"
+                },
+                "sync_error": {
+                  "type": "null"
+                },
+                "sync_retry_count": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "id",
+                "company_id",
+                "access_company_ids",
+                "access_building_ids",
+                "flatgramm_ids",
+                "device_type",
+                "model_type",
+                "serial_number",
+                "mac",
+                "title",
+                "host",
+                "status_type",
+                "status_checked_at",
+                "sw_version",
+                "hw_version",
+                "kkm",
+                "settings",
+                "sync_status_type",
+                "sync_at",
+                "sync_error",
+                "sync_retry_count"
+              ]
+            }
+          ]
+        },
+        "total": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "items",
+        "total"
+      ]
+    },
+    "error": {
+      "type": "null"
+    }
+  },
+  "required": [
+    "request_id",
+    "data",
+    "error"
+  ]
+}

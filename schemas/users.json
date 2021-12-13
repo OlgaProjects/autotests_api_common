@@ -1,0 +1,396 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "request_id": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "items": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "login": {
+                  "type": "null"
+                },
+                "phone_number": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "is_new": {
+                  "type": "boolean"
+                },
+                "sso_id": {
+                  "type": "null"
+                },
+                "mos_sso_id": {
+                  "type": "null"
+                },
+                "sso_user_id": {
+                  "type": "null"
+                },
+                "sso_linked": {
+                  "type": "boolean"
+                },
+                "ory_id": {
+                  "type": "null"
+                },
+                "vc_id": {
+                  "type": "integer"
+                },
+                "ustore_id": {
+                  "type": "integer"
+                },
+                "mrf_id": {
+                  "type": "integer"
+                },
+                "rf_id": {
+                  "type": "integer"
+                },
+                "company": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "vc_id": {
+                      "type": "integer"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "utc_offset": {
+                      "type": "integer"
+                    },
+                    "link_title": {
+                      "type": "null"
+                    },
+                    "ios_deep_link": {
+                      "type": "null"
+                    },
+                    "ios_app_store_link": {
+                      "type": "null"
+                    },
+                    "android_package_id": {
+                      "type": "null"
+                    },
+                    "huawei_appgallery_package_name": {
+                      "type": "null"
+                    },
+                    "web_link": {
+                      "type": "null"
+                    },
+                    "link_description": {
+                      "type": "null"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "vc_id",
+                    "title",
+                    "utc_offset",
+                    "link_title",
+                    "ios_deep_link",
+                    "ios_app_store_link",
+                    "android_package_id",
+                    "huawei_appgallery_package_name",
+                    "web_link",
+                    "link_description"
+                  ]
+                },
+                "creator_user_id": {
+                  "type": "integer"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "phone_number_verified": {
+                  "type": "boolean"
+                },
+                "email_verified": {
+                  "type": "boolean"
+                },
+                "created_at": {
+                  "type": "string"
+                },
+                "archived_at": {
+                  "type": "string"
+                },
+                "updated_at": {
+                  "type": "string"
+                },
+                "buildings": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "integer"
+                        },
+                        "mrf_id": {
+                          "type": "integer"
+                        },
+                        "rf_id": {
+                          "type": "integer"
+                        },
+                        "place": {
+                          "type": "string"
+                        },
+                        "street": {
+                          "type": "string"
+                        },
+                        "numbering": {
+                          "type": "null"
+                        },
+                        "fias_id": {
+                          "type": "string"
+                        },
+                        "orpon_id": {
+                          "type": "integer"
+                        },
+                        "company_id": {
+                          "type": "integer"
+                        },
+                        "utc_offset": {
+                          "type": "integer"
+                        },
+                        "entrances": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "name": {
+                                  "type": "string"
+                                },
+                                "floors": {
+                                  "type": "array",
+                                  "items": [
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "id": {
+                                          "type": "string"
+                                        },
+                                        "name": {
+                                          "type": "string"
+                                        },
+                                        "flats": {
+                                          "type": "array",
+                                          "items": [
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "id": {
+                                                  "type": "integer"
+                                                },
+                                                "company_id": {
+                                                  "type": "integer"
+                                                },
+                                                "name": {
+                                                  "type": "string"
+                                                },
+                                                "area": {
+                                                  "type": "integer"
+                                                },
+                                                "account": {
+                                                  "type": "null"
+                                                },
+                                                "sips": {
+                                                  "type": "array",
+                                                  "items": {}
+                                                },
+                                                "tfop_phones": {
+                                                  "type": "array",
+                                                  "items": {}
+                                                },
+                                                "user_settings": {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "redirect_to_mobile_application": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "devices_call_redirect_to_pstn": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "devices_call_redirect_to_sip": {
+                                                      "type": "boolean"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "redirect_to_mobile_application",
+                                                    "devices_call_redirect_to_pstn",
+                                                    "devices_call_redirect_to_sip"
+                                                  ]
+                                                },
+                                                "type": {
+                                                  "type": "string"
+                                                },
+                                                "room_permissions": {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "devices_rfids_intercom_access_behavior": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "devices_call_redirect_to_sip_behavior": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "devices_call_redirect_to_pstn_behavior": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "devices_call_redirect_to_mobile_app_behavior": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "devices_rfids_barrier_access_behavior": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "barriers_full_code_generate_behavior": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "devices_rfids_access_control_panel_access_behavior": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "fr_intercom_access_behavior": {
+                                                      "type": "boolean"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "devices_rfids_intercom_access_behavior",
+                                                    "devices_call_redirect_to_sip_behavior",
+                                                    "devices_call_redirect_to_pstn_behavior",
+                                                    "devices_call_redirect_to_mobile_app_behavior",
+                                                    "devices_rfids_barrier_access_behavior",
+                                                    "barriers_full_code_generate_behavior",
+                                                    "devices_rfids_access_control_panel_access_behavior",
+                                                    "fr_intercom_access_behavior"
+                                                  ]
+                                                },
+                                                "actions_permissions": {
+                                                  "type": "array",
+                                                  "items": {}
+                                                },
+                                                "is_subscription_enable": {
+                                                  "type": "boolean"
+                                                }
+                                              },
+                                              "required": [
+                                                "id",
+                                                "company_id",
+                                                "name",
+                                                "area",
+                                                "account",
+                                                "sips",
+                                                "tfop_phones",
+                                                "user_settings",
+                                                "type",
+                                                "room_permissions",
+                                                "actions_permissions",
+                                                "is_subscription_enable"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "id",
+                                        "name",
+                                        "flats"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "id",
+                                "name",
+                                "floors"
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "mrf_id",
+                        "rf_id",
+                        "place",
+                        "street",
+                        "numbering",
+                        "fias_id",
+                        "orpon_id",
+                        "company_id",
+                        "utc_offset",
+                        "entrances"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "type",
+                "login",
+                "phone_number",
+                "email",
+                "status",
+                "is_new",
+                "sso_id",
+                "mos_sso_id",
+                "sso_user_id",
+                "sso_linked",
+                "ory_id",
+                "vc_id",
+                "ustore_id",
+                "mrf_id",
+                "rf_id",
+                "company",
+                "creator_user_id",
+                "created_by",
+                "phone_number_verified",
+                "email_verified",
+                "created_at",
+                "archived_at",
+                "updated_at",
+                "buildings"
+              ]
+            }
+          ]
+        },
+        "total": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "items",
+        "total"
+      ]
+    },
+    "error": {
+      "type": "null"
+    }
+  },
+  "required": [
+    "request_id",
+    "data",
+    "error"
+  ]
+}
