@@ -10,10 +10,11 @@ def test_users_positive(base_fixture):
     a = resp_dict['data']['items'][0]['type']
     print(a)
 
-    # print(Config.base_path)
-    # print(resp_dict)
 
     check_resp = base_fixture.checker.users.check_users_type(resp_dict, status)
+    base_fixture.helper.print_all.request(response)
+
+
 
     assert response.status_code == 200
     assert check_resp is True, f'Поле name не соответствует ожидаемому {status}, ' \
@@ -27,3 +28,4 @@ def test_users_positive_validate(base_fixture):
     print(resp_dict)
     b = base_fixture.checker.regions.validate_json(resp_dict, 'users.json')
     assert b is True, f'Validation Failed'
+

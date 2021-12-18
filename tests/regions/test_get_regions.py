@@ -14,6 +14,7 @@ def test_positive(base_fixture):
     # print(resp_dict)
 
     check_resp = base_fixture.checker.regions.check_regions_service(resp_dict, status)
+    base_fixture.helper.print_all.request(response)
 
     assert response.status_code == 200
     assert check_resp is True, f'Поле name не соответствует ожидаемому {status}, ' \

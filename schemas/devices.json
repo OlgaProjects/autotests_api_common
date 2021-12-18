@@ -65,14 +65,11 @@
                 "status_type": {
                   "type": "string"
                 },
-                "status_checked_at": {
-                  "type": "string"
-                },
                 "sw_version": {
-                  "type": "string"
+                  "type": "null"
                 },
                 "hw_version": {
-                  "type": "string"
+                  "type": "null"
                 },
                 "kkm": {
                   "type": "null"
@@ -80,7 +77,46 @@
                 "settings": {
                   "type": "object",
                   "properties": {
+                    "autocollect": {
+                      "type": "object"
+                    },
+                    "code": {
+                      "type": "object"
+                    },
                     "door": {
+                      "type": "object"
+                    },
+                    "dtmf": {
+                      "type": "object"
+                    },
+                    "emergency_door": {
+                      "type": "object",
+                      "properties": {
+                        "status_type": {
+                          "type": "string"
+                        },
+                        "final_status_type": {
+                          "type": "string"
+                        },
+                        "status_at": {
+                          "type": "string"
+                        },
+                        "status_error": {
+                          "type": "string"
+                        },
+                        "status_retry_count": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "status_type",
+                        "final_status_type",
+                        "status_at",
+                        "status_error",
+                        "status_retry_count"
+                      ]
+                    },
+                    "gate": {
                       "type": "object"
                     },
                     "ntp": {
@@ -89,14 +125,23 @@
                     "rfid": {
                       "type": "object"
                     },
+                    "sip": {
+                      "type": "object"
+                    },
                     "syslog": {
                       "type": "object"
                     }
                   },
                   "required": [
+                    "autocollect",
+                    "code",
                     "door",
+                    "dtmf",
+                    "emergency_door",
+                    "gate",
                     "ntp",
                     "rfid",
+                    "sip",
                     "syslog"
                   ]
                 },
@@ -107,7 +152,7 @@
                   "type": "string"
                 },
                 "sync_error": {
-                  "type": "null"
+                  "type": "string"
                 },
                 "sync_retry_count": {
                   "type": "integer"
@@ -126,7 +171,6 @@
                 "title",
                 "host",
                 "status_type",
-                "status_checked_at",
                 "sw_version",
                 "hw_version",
                 "kkm",

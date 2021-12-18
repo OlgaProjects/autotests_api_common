@@ -1,0 +1,503 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "company_id": {
+          "type": "integer"
+        },
+        "access_company_ids": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "access_building_ids": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "flatgramm_ids": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "device_type": {
+          "type": "string"
+        },
+        "model_type": {
+          "type": "string"
+        },
+        "serial_number": {
+          "type": "string"
+        },
+        "mac": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "host": {
+          "type": "string"
+        },
+        "status_type": {
+          "type": "string"
+        },
+        "sw_version": {
+          "type": "null"
+        },
+        "hw_version": {
+          "type": "null"
+        },
+        "kkm": {
+          "type": "null"
+        },
+        "settings": {
+          "type": "object",
+          "properties": {
+            "autocollect": {
+              "type": "object"
+            },
+            "code": {
+              "type": "object"
+            },
+            "door": {
+              "type": "object"
+            },
+            "dtmf": {
+              "type": "object"
+            },
+            "emergency_door": {
+              "type": "object",
+              "properties": {
+                "status_type": {
+                  "type": "string"
+                },
+                "final_status_type": {
+                  "type": "string"
+                },
+                "status_at": {
+                  "type": "string"
+                },
+                "status_error": {
+                  "type": "string"
+                },
+                "status_retry_count": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "status_type",
+                "final_status_type",
+                "status_at",
+                "status_error",
+                "status_retry_count"
+              ]
+            },
+            "gate": {
+              "type": "object"
+            },
+            "ntp": {
+              "type": "object"
+            },
+            "rfid": {
+              "type": "object"
+            },
+            "sip": {
+              "type": "object"
+            },
+            "syslog": {
+              "type": "object"
+            }
+          },
+          "required": [
+            "autocollect",
+            "code",
+            "door",
+            "dtmf",
+            "emergency_door",
+            "gate",
+            "ntp",
+            "rfid",
+            "sip",
+            "syslog"
+          ]
+        },
+        "sync_status_type": {
+          "type": "string"
+        },
+        "sync_at": {
+          "type": "string"
+        },
+        "sync_error": {
+          "type": "string"
+        },
+        "sync_retry_count": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "company_id",
+        "access_company_ids",
+        "access_building_ids",
+        "flatgramm_ids",
+        "device_type",
+        "model_type",
+        "serial_number",
+        "mac",
+        "title",
+        "host",
+        "status_type",
+        "sw_version",
+        "hw_version",
+        "kkm",
+        "settings",
+        "sync_status_type",
+        "sync_at",
+        "sync_error",
+        "sync_retry_count"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "company_id": {
+          "type": "integer"
+        },
+        "access_company_ids": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "access_building_ids": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "flatgramm_ids": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "device_type": {
+          "type": "string"
+        },
+        "model_type": {
+          "type": "string"
+        },
+        "serial_number": {
+          "type": "string"
+        },
+        "mac": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "host": {
+          "type": "string"
+        },
+        "status_type": {
+          "type": "string"
+        },
+        "sw_version": {
+          "type": "null"
+        },
+        "hw_version": {
+          "type": "null"
+        },
+        "kkm": {
+          "type": "null"
+        },
+        "settings": {
+          "type": "object",
+          "properties": {
+            "autocollect": {
+              "type": "object"
+            },
+            "code": {
+              "type": "object"
+            },
+            "door": {
+              "type": "object"
+            },
+            "dtmf": {
+              "type": "object"
+            },
+            "emergency_door": {
+              "type": "object",
+              "properties": {
+                "status_type": {
+                  "type": "string"
+                },
+                "final_status_type": {
+                  "type": "string"
+                },
+                "status_at": {
+                  "type": "string"
+                },
+                "status_error": {
+                  "type": "string"
+                },
+                "status_retry_count": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "status_type",
+                "final_status_type",
+                "status_at",
+                "status_error",
+                "status_retry_count"
+              ]
+            },
+            "gate": {
+              "type": "object"
+            },
+            "ntp": {
+              "type": "object"
+            },
+            "rfid": {
+              "type": "object"
+            },
+            "sip": {
+              "type": "object"
+            },
+            "syslog": {
+              "type": "object"
+            }
+          },
+          "required": [
+            "autocollect",
+            "code",
+            "door",
+            "dtmf",
+            "emergency_door",
+            "gate",
+            "ntp",
+            "rfid",
+            "sip",
+            "syslog"
+          ]
+        },
+        "sync_status_type": {
+          "type": "string"
+        },
+        "sync_at": {
+          "type": "string"
+        },
+        "sync_error": {
+          "type": "null"
+        },
+        "sync_retry_count": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "company_id",
+        "access_company_ids",
+        "access_building_ids",
+        "flatgramm_ids",
+        "device_type",
+        "model_type",
+        "serial_number",
+        "mac",
+        "title",
+        "host",
+        "status_type",
+        "sw_version",
+        "hw_version",
+        "kkm",
+        "settings",
+        "sync_status_type",
+        "sync_at",
+        "sync_error",
+        "sync_retry_count"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "company_id": {
+          "type": "integer"
+        },
+        "access_company_ids": {
+          "type": "array",
+          "items": {}
+        },
+        "flatgramm_ids": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "device_type": {
+          "type": "string"
+        },
+        "model_type": {
+          "type": "string"
+        },
+        "serial_number": {
+          "type": "string"
+        },
+        "mac": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "host": {
+          "type": "string"
+        },
+        "status_type": {
+          "type": "string"
+        },
+        "sw_version": {
+          "type": "null"
+        },
+        "hw_version": {
+          "type": "null"
+        },
+        "kkm": {
+          "type": "boolean"
+        },
+        "settings": {
+          "type": "object",
+          "properties": {
+            "autocollect": {
+              "type": "object"
+            },
+            "code": {
+              "type": "object"
+            },
+            "door": {
+              "type": "object"
+            },
+            "dtmf": {
+              "type": "object"
+            },
+            "emergency_door": {
+              "type": "object",
+              "properties": {
+                "status_type": {
+                  "type": "string"
+                },
+                "final_status_type": {
+                  "type": "string"
+                },
+                "status_at": {
+                  "type": "string"
+                },
+                "status_error": {
+                  "type": "string"
+                },
+                "status_retry_count": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "status_type",
+                "final_status_type",
+                "status_at",
+                "status_error",
+                "status_retry_count"
+              ]
+            },
+            "gate": {
+              "type": "object"
+            },
+            "ntp": {
+              "type": "object"
+            },
+            "rfid": {
+              "type": "object"
+            },
+            "sip": {
+              "type": "object"
+            },
+            "syslog": {
+              "type": "object"
+            }
+          },
+          "required": [
+            "autocollect",
+            "code",
+            "door",
+            "dtmf",
+            "emergency_door",
+            "gate",
+            "ntp",
+            "rfid",
+            "sip",
+            "syslog"
+          ]
+        },
+        "sync_status_type": {
+          "type": "string"
+        },
+        "sync_at": {
+          "type": "string"
+        },
+        "sync_error": {
+          "type": "string"
+        },
+        "sync_retry_count": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "company_id",
+        "access_company_ids",
+        "flatgramm_ids",
+        "device_type",
+        "model_type",
+        "serial_number",
+        "mac",
+        "title",
+        "host",
+        "status_type",
+        "sw_version",
+        "hw_version",
+        "kkm",
+        "settings",
+        "sync_status_type",
+        "sync_at",
+        "sync_error",
+        "sync_retry_count"
+      ]
+    }
+  ]
+}
