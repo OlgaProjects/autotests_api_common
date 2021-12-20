@@ -22,7 +22,6 @@ def test_get_devices_positive_validate_items(base_fixture):
 
     response = base_fixture.api.devices.get_devices('3')
     resp_dict = response.json()
-    # print(resp_dict['data']['items'])
 
     base_fixture.checker.regions.validate_json(resp_dict['data']['items'], 'devices_3.json')
 
