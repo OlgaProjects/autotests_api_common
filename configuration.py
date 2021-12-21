@@ -3,7 +3,7 @@ import pathlib
 
 
 class Config:
-    url = 'https://household-staging.k8s.key.rt.ru'
+    url = ''
     api_method_users = "/api/v3/users?limit=1"
     api_method_devices = '/api/v4/devices?limit='
     api_method_regions = "/api/v4/configs/regions"
@@ -15,4 +15,4 @@ class Config:
     # base_path_1 = Path(pathlib.Path.cwd(), "schemas", "regions.json")
     base_path = 'C:/Users/user/PycharmProjects/autotests_api_common/schemas/'
 
-    token = "eyJhbGciOiJSUzI1NiIsImtpZCI6InB1YmxpYzo3ZmZkMjI0NS1hOTM2LTQ3NjMtODI2Zi05YTQ4ODIzMjBkZTUiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOltdLCJjbGllbnRfaWQiOiJZV1J0YVc0Nk1UZzFNRFE2TVRjMU1EazZNakEwT2pFNE16VTZPanByVEc1dFExSlZaRlZJU0U5cFlUaGxSakZwV0hSMGRWSkhXRE5QY0RsWVlWWnpWR2h2YlhkVU5WZzVTek00U1V4a1JrVkVVaXRzV0hWUU0xTlhjVk55IiwiZXhwIjoxNjY0OTc5Mjc2LCJleHQiOnt9LCJpYXQiOjE2MzkwNTkyNzYsImlzcyI6Imh0dHBzOi8vb2F1dGgyLmtleS5ydC5ydS8iLCJqdGkiOiI4YmZhYTNkZi1mNDZlLTQxMzQtOTA1Zi1jYzUxYzc0MGZlOGIiLCJuYmYiOjE2MzkwNTkyNzYsInNjcCI6W10sInN1YiI6IllXUnRhVzQ2TVRnMU1EUTZNVGMxTURrNk1qQTBPakU0TXpVNk9qcHJURzV0UTFKVlpGVklTRTlwWVRobFJqRnBXSFIwZFZKSFdETlBjRGxZWVZaelZHaHZiWGRVTlZnNVN6TTRTVXhrUmtWRVVpdHNXSFZRTTFOWGNWTnkifQ.hKICtLgYQJcWBd7C7fSKRurmK_T7QBMy849fop3q9ksNcn7EkAJ0Ds5T5Iaaq8S8yCgs-WM9Cq_hT7GdZguqdsTklpbl1Amt05aaYucu2gu2G5Tq3nvwAUj3HtCE65K1CCYYlqNDrirv_4lTzqlZVybgdZOUsq8ChP1wQ6dfhHVcMAyfoDhbjQsyaYlSW63155i5AEZIIYFwsGybSwMbH0KSeEUkzW3wlJfNmf5haCTH66sm6Qqw0nSLTYZJReS8raHX2flW6Q_wfmVm9Uo1uVfCkudLACWqxjGLSBKH3s1T4giYpmpYq-u4K-me9r_E6LqTUOi4uyHGP_QthJ4IGLJtKiL3LzdOGVEnfJXQ1ddhVaUA6mVlMkH3E_kOHAvMpP-PyqmiWa9gQKDazaamKHgFpE4LD7VHE-2zUaWrRnLjH9jmGOYGrOHRZneQ2b41eAxj6dOqWqaKZBT9Lp76WLVWeLK5eZVVbp6q0zfIxk7fH7CU9YEixF6h6ppq-Jo-qOPeZr3tM_FuQIKNNARcGdIGok6-Zt_iJCrQ2K9idsbFT0Cz25KVDPpBW5ke3xMYDVf0c0QtR7AS7e05_k0fAJqzHv3fCn49RSpmMnAwv27TDPcft2Xpa2D6obNH2jqjOgp7dnEmPuGewMO4Z2srza38xwFIHp9Jv15A-e-FY6k"
+    token = ''
